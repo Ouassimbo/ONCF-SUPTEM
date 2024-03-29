@@ -1,0 +1,89 @@
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 10rem;
+}
+
+section div .margin-top {
+  margin-top: 1rem;
+}
+
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.video-header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-header .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+p,
+label,
+input::placeholder {
+  font-family: "Inter";
+}
+
+.btn-submit {
+  box-shadow: inset 0 0 0 2px #42dca3;
+  transition: all 0.3s ease-in-out;
+  border: 2px;
+}
+
+.btn-submit:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #42dca3;
+  border-width: 2px;
+}
+
+.nav-text-hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .nav-text-hidden {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .custom_form {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .custom_form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .custom_form {
+    width: 50%;
+  }
+}

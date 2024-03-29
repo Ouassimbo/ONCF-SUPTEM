@@ -1,0 +1,16 @@
+.nav-text-hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .nav-text-hidden {
+    display: inline;
+  }
+}
